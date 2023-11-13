@@ -30,6 +30,10 @@ To install library dependencies run the following command at the root of the pro
 
 `npm install`
 
+To work around a bug in the existing version of danfo.js run the following command first:
+
+`npm run setup`
+
 To execute the project webpage, run the following command:
 
 `npm run start`

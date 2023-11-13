@@ -3,14 +3,25 @@
   "private": true,
   "version": "1.0.0",
   "description": "A basic neural network sleep efficiency predictor.",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "shx cp node_modules/danfojs/lib/bundle.js node_modules/danfojs/lib/bundle-esm.js",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "author": "Shaylin Chetty",
   "license": "ISC",
   "dependencies": {
     "@tensorflow/tfjs": "^4.13.0",
     "danfojs": "^1.1.2"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.10.2",
+    "process": "^0.11.10",
+    "shx": "^0.3.4"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
   }
 }
