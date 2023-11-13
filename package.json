@@ -5,7 +5,7 @@
   "description": "A basic neural network sleep efficiency predictor.",
   "source": "src/index.html",
   "scripts": {
-    "setup": "shx cp node_modules/danfojs/lib/bundle.js node_modules/danfojs/lib/bundle-esm.js",
+    "setup": "node setup/setup.js",
     "start": "parcel",
     "build": "parcel build"
   },
@@ -18,8 +18,7 @@
   "devDependencies": {
     "buffer": "^6.0.3",
     "parcel": "^2.10.2",
-    "process": "^0.11.10",
-    "shx": "^0.3.4"
+    "process": "^0.11.10"
   },
   "@parcel/resolver-default": {
     "packageExports": true
