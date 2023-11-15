@@ -5,10 +5,53 @@
     <title>Sleep Efficiency Inference</title>
 </head>
 <body>
-<a href="./training.html">Training</a>
-<a href="./index.html">Preparation</a>
-<div id="tableDiv"></div>
-<div id="visualisationDiv"></div>
-<script type="module" src="./js/app.js"></script>
+    <a href="./training.html">Training</a>
+    <a href="./index.html">Preparation</a>
+    <div style="margin:20px">
+        <label for="ageInput">Age:</label>
+        <input type="number" id="ageInput" name="ageInput" min="1" max="65" value="20">
+    </div>
+    <div style="margin:20px">
+        <label for="genderInput">Gender:</label>
+        <select name="genderInput" id="genderInput">
+            <option value=0>Male</option>
+            <option value=1>Female</option>
+        </select>
+    </div>
+    <div style="margin:20px">
+        <label for="caffeineInput">Caffeine consumption (mg):</label>
+        <input type="number" id="caffeineInput" name="caffeineInput" min="0" max="400" value="50">
+    </div>
+    <div style="margin:20px">
+        <label for="alcoholInput">Alcohol consumption frequency per week:</label>
+        <input type="number" id="alcoholInput" name="alcoholInput" min="0" max="400" value="0">
+    </div>
+    <div style="margin:20px">
+        <label for="smokingInput">Smoking status:</label>
+        <select name="smokingInput" id="smokingInput">
+            <option value=0>No</option>
+            <option value=1>Yes</option>
+        </select>
+    </div>
+    <div style="margin:20px">
+        <label for="exerciseInput">Exercise frequency per week:</label>
+        <input type="number" id="exerciseInput" name="exerciseInput" min="0" max="7" value="1">
+    </div>
+    <div style="margin:20px">
+        <label for="sleepHourInput">Sleep hour (24hr time):</label>
+        <input type="number" id="sleepHourInput" name="sleepHourInput" min="0" max="24" value="22">
+    </div>
+    <div style="margin:20px">
+        <button id="predictionButton">
+            Predict!
+        </button>
+    </div>
+    <div style="margin:20px">
+        <div>
+            Predicted effective sleep:
+        </div>
+        <div id="effectiveSleepValue"></div>
+    </div>
+    <script type="module" src="./js/inference.js"></script>
 </body>
 </html>

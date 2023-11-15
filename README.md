@@ -17,7 +17,7 @@ That being said, spending days configuring your Python environment and fiddling 
 This work utilizes the [sleep efficiency dataset](https://www.kaggle.com/datasets/equilibriumm/sleep-efficiency) from kaggle.
 
 While the dataset is quite limited in size and has many methodological issues, it is a good candidate to help us answer the question:
-> What is the ideal bedtime to achieve the highest sleep efficiency?
+> What lifestyle changes should I make to achieve the highest sleep efficiency?
 
 We will first utilize [danfo.js](https://danfo.jsdata.org/) to ingest and prepare, and visualize our downloaded data csv.
 
